@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample map</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header-box {
+            position: static;
+        }
+
+        p {
+            width: 1228px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .box {
+            position: relative;
+            width: 1228px;
+            height: 777px;
+            margin: 30px auto;
+            background-image: url(images/map0.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: contain;
+        }
+
+        .box a {
+            font-weight: 700;
+            color: black;
+            line-height: 14px;
+        }
+
+        .box a:hover {
+            color: #fff
+        }
+
+        .city {
+            position: absolute;
+            top: 248px;
+            left: 327px;
+            color: #fff;
+            /* color: pink; */
+        }
+
+        .no2 {
+            top: 252px;
+            left: 69px;
+        }
+
+        .no3 {
+            top: 400px;
+            left: 155px;
+        }
+
+        .no4 {
+            top: 370px;
+            left: 437px;
+        }
+
+        .no5 {
+            top: 380px;
+            left: 437px;
+        }
+
+        .no6 {
+            top: 360px;
+            left: 587px;
+        }
+
+        .no7 {
+            top: 280px;
+            left: 695px;
+        }
+
+        .no8 {
+            top: 275px;
+            left: 740px;
+        }
+
+        .no9 {
+            top: 380px;
+            left: 769px;
+        }
+
+        .no10 {
+            top: 384px;
+            left: 785px;
+        }
+
+        .no11 {
+            top: 390px;
+            left: 797px;
+        }
+
+        .no12 {
+            top: 398px;
+            left: 805px;
+        }
+
+        .no13 {
+            top: 420px;
+            left: 750px;
+        }
+
+        .no14 {
+            top: 430px;
+            left: 815px;
+        }
+
+        .no15 {
+            top: 170px;
+            left: 1005px;
+        }
+
+        .no16 {
+            top: 359px;
+            left: 907px;
+        }
+
+        .no17 {
+            top: 382px;
+            left: 904px;
+        }
+
+        .no18 {
+            top: 390px;
+            left: 912px;
+        }
+
+        .no19 {
+            top: 371px;
+            left: 905px;
+        }
+
+
+
+
+        .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .city div[class^="pulse"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px #fff;
+            border-radius: 50%;
+            animation: pulse 1.8s linear infinite;
+        }
+
+        .city div.pulse2 {
+            animation-delay: 0.4s;
+        }
+
+        .city div.pulse3 {
+            animation-delay: 0.8s;
+        }
+
+        .city-link {
+            position: absolute;
+            top: 250px;
+            left: 345px;
+            /* width: 10px;
+            height: 10px; */
+            background-color: transparent;
+        }
+
+        .no2l {
+            top: 265px;
+            left: 69px;
+        }
+
+        .no3l {
+            top: 410px;
+            left: 110px;
+        }
+
+        .no4l {
+            top: 350px;
+            left: 350px;
+        }
+
+        .no5l {
+            top: 390px;
+            left: 380px;
+        }
+
+        .no6l {
+            top: 370px;
+            left: 587px;
+        }
+
+        .no7l {
+            top: 290px;
+            left: 670px;
+        }
+
+        .no8l {
+            top: 260px;
+            left: 748px;
+        }
+
+        .no9l {
+            top: 360px;
+            left: 755px;
+        }
+
+        .no10l {
+            top: 372px;
+            left: 794px;
+        }
+
+        .no11l {
+            top: 387px;
+            left: 810px;
+        }
+
+        .no12l {
+            top: 400px;
+            left: 815px;
+        }
+
+        .no13l {
+            top: 425px;
+            left: 756px;
+        }
+
+        .no14l {
+            top: 430px;
+            left: 825px;
+        }
+
+        .no15l {
+            top: 170px;
+            left: 1015px;
+        }
+
+        .no16l {
+            top: 347px;
+            left: 918px;
+        }
+
+        .no17l {
+            top: 380px;
+            left: 917px;
+        }
+
+        .no18l {
+            top: 395px;
+            left: 919px;
+        }
+
+        .no19l {
+            top: 362px;
+            left: 915px;
+        }
+
+
+        @keyframes pulse {
+            0% {}
+
+            70% {
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-box">
+        <div class="header w">
+            <a href="index.html">
+                <div class="logo"> </div>
+            </a>
+            <div class="header-nav">
+                <ul>
+                    <li><a href="sample.html" target="_blank">Sample</a></li>
+                    <li><a href="https://www2.whoi.edu/staff/pbarry/facilities/" target="_blank">Instrumentation</a>
+                    </li>
+                    <li><a href="#" target="_blank">Database</a></li>
+                    <li><a href="publication.html" target="_blank">Publications</a></li>
+                    <li><a href="photos.html" target="_blank">Photos and Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <p>So far, we have analyzed 94 mafic samples from different settings and the sample locations are shown in the
+        following diagram:</p>
+    <div class="box">
+        <div class="city">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0012821X20306518?via%3Dihub" target="_blank"
+            class="city-link">Siberia</a>
+
+        <div class="city no2">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.nature.com/articles/s41586-020-2173-4" target="_blank" class="city-link no2l">Eifel</a>
+
+        <div class="city no3">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.nature.com/articles/s41586-020-2173-4" target="_blank" class="city-link no3l">Ayrolaf</a>
+
+        <div class="city no4">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-earth-071620-055024" target="_blank"
+            class="city-link no4l">Review paper</a>
+
+        <div class="city no5">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="publication.html" target="_blank" class="city-link no5l">Mariana</a>
+
+        <div class="city no6">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.nature.com/articles/s41586-020-2173-4" target="_blank" class="city-link no6l">Hawaii</a>
+
+        <div class="city no7">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="publication.html" target="_blank" class="city-link no7l">Cascadia</a>
+
+        <div class="city no8">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.nature.com/articles/s41586-020-2173-4" target="_blank"
+            class="city-link no8l">Yellowstone</a>
+
+        <div class="city no9">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0012821X21003678" target="_blank"
+            class="city-link no9l">EI Salvador</a>
+
+        <div class="city no10">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0012821X21003678" target="_blank"
+            class="city-link no10l">Costa Rica</a>
+
+        <div class="city no11">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0012821X21003678" target="_blank"
+            class="city-link no11l">Nicaragua</a>
+
+        <div class="city no12">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0012821X21003678" target="_blank"
+            class="city-link no12l">Panama</a>
+
+        <div class="city no13">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="publication.html" target="_blank" class="city-link no13l">895D</a>
+
+        <div class="city no14">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="publication.html" target="_blank" class="city-link no14l">Chile</a>
+
+        <div class="city no15">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.nature.com/articles/s41586-020-2173-4" target="_blank" class="city-link no15l">Iceland</a>
+
+        <div class="city no16">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="publication.html" target="_blank" class="city-link no16l">920D</a>
+
+        <div class="city no17">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="publication.html" target="_blank" class="city-link no17l">1274A</a>
+
+        <div class="city no18">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="publication.html" target="_blank" class="city-link no18l">1271B</a>
+
+        <div class="city no19">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="publication.html" target="_blank" class="city-link no19l">14<sup>°</sup>N</a>
+    </div>
+</body>
+
+</html>
