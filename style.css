@@ -85,7 +85,9 @@ li {
     /* width: 1920px; */
     height: 1037px;
     background-image: url(images/Iceland.jpg);
-    background-size: cover;
+    /*background-size: cover;*/
+    width: 100%;
+    /*background-color: yellow;*/
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
@@ -127,7 +129,7 @@ li {
     height: 600px;
     /* background-color: gray; */
     background-image: url(images/WHOI_textures_3.jpg);
-    background-color: pink;
+    /*background-color: pink;*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -146,8 +148,8 @@ li {
 
 .banner {
     height: 400px;
-    width: 1600px;
-    /* background-color: pink; */
+    width: 73%;
+    /*background-color: pink;*/
     margin-bottom: 50px;
     margin: 0 auto;
 }
