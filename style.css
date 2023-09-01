@@ -85,8 +85,8 @@ li {
     /* width: 1920px; */
     height: 1037px;
     background-image: url(images/Iceland.jpg);
-    /*background-size: cover;*/
-    width: 100%;
+    background-size: cover;
+
     /*background-color: yellow;*/
     background-repeat: no-repeat;
     background-position: center center;
